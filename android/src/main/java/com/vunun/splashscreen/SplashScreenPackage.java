@@ -1,7 +1,5 @@
 package com.vunun.splashscreen;
 
-import android.app.Activity;
-
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -13,10 +11,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class SplashScreenPackage implements ReactPackage {
-    Activity mActivity;
 
-    public SplashScreenPackage(Activity activity) {
-        mActivity = activity;
+    public SplashScreenPackage() {
     }
 
     @Override
@@ -34,7 +30,7 @@ public class SplashScreenPackage implements ReactPackage {
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new SplashScreen(reactContext, mActivity));
+        modules.add(new SplashScreenModule(reactContext));
 
         return modules;
     }

@@ -1,6 +1,6 @@
 {
   "name": "react-native-vunun-android-splash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react native android splash",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "nativePackage": true,
   "rnpm": {
     "android": {
-      "packageInstance": "new SplashScreenPackage(this)"
+      "packageInstance": "new SplashScreenPackage()"
     }
   }
 }
